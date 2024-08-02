@@ -22,7 +22,7 @@ Este projeto realiza a raspagem de informações de produtos do Mercado Livre ut
 - Navegador (Chrome, Firefox, etc.) e o respectivo WebDriver (Chromedriver, Geckodriver, etc.)
 
 ### Executando o codigo 
--certifique-se de ter criando uma ambiente virtual e feito feito as instalações dos pacotes que estão no requirements.txt
+-certifique-se de ter criado um ambiente virtual e feito as instalações dos pacotes que estão no requirements.txt
 ```
 pip install -r requirements.txt
 ```
