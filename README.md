@@ -24,7 +24,7 @@ Este projeto realiza a raspagem de informações de produtos do Mercado Livre ut
 ### Executando o codigo 
 -certifique-se de ter criando uma ambiente virtual e feito feito as instalações dos pacotes que estão no requirements.txt
 ```
-pip freeze > requirements.txt
+pip install -r requirements.txt
 ```
 - Executar o arquivo rotas.py
 - copiar o link do localHost gerado e adicionar ao final '/inicio'
