@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style_load.css')}}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</head>
+<body>
+    <button class="okok" onclick="abrirModal()">teste</button>
+
+    <div class="janela-modal" id="janela-modal">
+        <div class="modal">
+            <button class="fechar" id="fechar" >X</button>
+            <span class="carregando_2"></span>
+        </div>
+    </div>
+  
+</body>
+</html>

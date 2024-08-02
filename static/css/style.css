@@ -1,0 +1,120 @@
+.teste{
+    width: 50%;
+    padding:  60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 170px;
+    border-radius: 40px ;
+    border-style: solid;
+    border-color: rgb(21, 21, 121);
+}
+
+.centro{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo{
+    margin-left: 35%;
+    margin-right: auto;
+    color: rgb(21, 21, 121);
+}
+
+.subtitulo{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial;
+    font-size: 30px;
+    color: rgb(21, 21, 121);
+
+}
+.body_primeira_pag_1{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("/static/imagens/mercado.jpg");
+    background-size: cover; /*ajusta a imagem para cobri o plano de fundo*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh; /* Define a altura da imagem de fundo */
+    margin: 0; /* Remove margens padrão do body */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+.body_primeira_pag{
+    background-image: url("/static/imagens/mercado.jpg");
+}
+
+.body_segunda_pag{
+    background-image: url("/static/imagens/mercado.jpg");
+
+}
+
+
+button{
+    margin-top: 20px;
+
+}
+
+.alterando_input{
+    border-color: black;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+.alterando_label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 23px;
+}
+
+.espacamento{
+    margin-top: 30px;
+}
+
+.arendodar{
+    border-radius: 20px;
+}
+
+.div_titulo_tabela{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.titulo_tabela{
+    font-family: Arial;
+    font-size: 60px;
+    color: rgb(4, 27, 111);
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-style: solid;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 25px auto ;
+    font-size: 18px;
+    text-align: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-color: rgb(4, 27, 111);
+}
+
+th, td {
+    padding: 13px;
+    /* border-bottom: 1px solid #ddd;  passar o mouse por cime*/
+    border:  1px solid rgb(4, 27, 111);
+    background-color: #f2f2f2;
+}
+th {
+    background-color: #37288d;
+    font-size: 20px;
+    color: white;
+}
+tr:hover {
+    background-color: #f5f5f5;
+}

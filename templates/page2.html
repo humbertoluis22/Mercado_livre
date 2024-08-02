@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <title>Tabela de produtos</title>
+</head>
+<body class="body_segunda_pag" >
+    <div class="div_titulo_tabela">
+        <h1 class="titulo_tabela">Tabela de produtos</h1>
+    </div>
+    <div>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome Do Vendedor</th>
+                <th>Vendedor</th>
+                <th>Avaliação</th>
+                <th>Valor</th>
+                <th>Parcelas</th>
+            </tr> 
+        </thead>
+        <tbody>
+            {% for mercadoria in mercadorias %}
+            <tr>
+                <td>{{mercadoria.retorna_nome()}}</td>
+                <td>{{mercadoria.retorna_vendedor()}}</td>
+                <td>{{mercadoria.retorna_avaliacao()}}</td>
+                <td>{{mercadoria.retorna_valor()}}</td>
+                <td>{{mercadoria.retorna_parcelas()}}</td>
+            </tr>
+            {% endfor %}
+            
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>

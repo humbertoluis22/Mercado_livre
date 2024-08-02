@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style_load.css')}}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <title>Document</title>
+</head>
+
+<body class="body_primeira_pag" >
+    <!-- <img src="/static/imagens/mercado.jpg" alt="Minha Imagem" id="Imagem"> -->
+    <div class="teste">   
+    <h1 id = "filterForm" class="titulo" ><strong>Filtrar</strongs> Itens</h1>
+        <form class="row  g-10 espacamento" method="POST" action="/filtrar">
+            <div class="d-grid gap-2 col-6 mx-auto ">
+                <label id="produto_" class="subtitulo" >Produto</label>
+                <input type="text" placeholder="Produto..."   name = 'nome_produto'  class="form-control alterando_input">
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <label id="quantidade_"class="subtitulo"  >Quantidade</label>
+                <input placeholder="Quantidade de itens"   name= 'quantidade' type="number" class="form-control alterando_input">
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button id="buscar" name="buscar" class="btn btn-primary espacamento  arendodar" onclick="abrirModal()" >Buscar</button>
+            </div>
+        </form>
+   </div>
+   <div class="janela-modal" id="janela-modal">
+    <div class="modal">
+        <span class="carregando_2"></span>
+    </div>
+    </div>
+</body>
+</html>

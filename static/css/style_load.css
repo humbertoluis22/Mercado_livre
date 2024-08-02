@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(208, 208, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carregando_2{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    border : 14px solid blue;
+    border-top: 12px  solid transparent;
+    animation: loading 1s linear infinite;
+
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.janela-modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* display: flex; #exibir o modal  */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+.janela-modal.abrir{
+    display: flex;
+}
+
+
+
+/* deixando codigo a baixo comentado para estudo */
+/* .modal{
+    width:60% ;
+    min-width: 350px;
+    min-height: 200px;
+    background-color: #ffffff76;
+    backdrop-filter: blur(1opx);
+    padding: 50px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.modal{
+    width:60% ;
+    height: 10%;
+    min-width: 350px;
+    min-height: 200px;
+    background-color: #ffffff76;
+    backdrop-filter: blur(1opx);
+    padding: 50px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fechar{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+}
+
+
+.okok{
+    padding: 15px 60px;
+    /* display: inline; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+}
